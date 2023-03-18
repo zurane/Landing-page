@@ -1,13 +1,298 @@
-body {
+
+
+
+* {
+  font-family: "Atkinson Hyperlegible", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 40px;
+  color: rgb(53, 53, 53);
+  text-align: left;
+}
+
+.header-element {
+  min-height: 95vh;
+  background:rgb(253, 253, 253);
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 150px 45px;
+}
+
+.hero-section > img {
+  border-radius: 10px;
+}
+
+.hero-section > .hero-title > .register-btn {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 10px;
+  background: #15ca7f;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.hero-section > .hero-title > .register-btn:hover {
+  background: #16db89;
+}
+.hero-section > .hero-title > h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.hero-section > .hero-title {
+  margin: auto;
+}
+
+.hero-section > .hero-title > .sign-in-btn {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.hero-section > .hero-title > .sign-in-btn {
+  background: none;
+  color: #00ad57;
+  font-weight: 600;
+  border: 0.28px solid gray;
+  margin-left: 15px;
+}
+
+.hero-section > .hero-title > .sign-in-btn:hover {
+  border: 1px solid #379e6b;
+}
+.hero-section > .hero-title > .subtext {
+  font-size: 20px;
+}
+footer {
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 110px;
+  background: white;
+  box-shadow: 0px 3px 6px -5px rgba(80, 80, 80, 0.137);
+  top: 0px;
+  position: fixed;
+  width: 90%;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+  text-align: right;
+}
+
+li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+}
+
+.about__product {
+  margin: auto;
+  padding: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  border: 0.25px solid gray
+}
+
+.about__product > .content {
+
+  background: 000000 !important;
+}
+
+.about__product > img {
+
+  border-radius: 10px;
+  border:0.25px solid rgb(22, 168, 81);
+}
+
+.about__product > .content > p {
+  font-size: 17px;
+  width: 80%;
+}
+
+.about__product > .content > h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size:50px;
+
+}
+
+.about__product > .content > a {
+
+  text-decoration: none;
+  color:rgb(0, 128, 117);
+
+}
+.learn__more__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.how__to__register {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 80px;
+  margin: auto;
+  padding: 10rem;
+}
+
+.how__to__register > img {
+  border-radius: 10px;
+  border:0.25px solid rgb(100, 206, 153);
+}
+
+.how__to__register > .content > p {
+  font-size: 17px;
+  width: 80%;
+}
+
+
+.how__to__register > .content > h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size:50px;
+}
+
+
+.see__plans__btn {
+   display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.how__to__register > .content > a {
+  text-decoration: none;
+  color:rgb(0, 128, 117);
+
+
+}
+.badge__section {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 30px;
+}
+
+.subtext {
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+.logos > h3 {
+  font-weight: 600;
+}
+.logos {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.cta__section {
+  padding: 70px;
+  background: rgb(9, 31, 20);
+}
+
+.cta__heading {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.cta__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.cta__heading > h3 {
+  font-size: 40px;
+  padding: 5px 0px 50px 0px;
+}
+.cta__content > .card {
+  padding: 20px;
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(197, 197, 197, 0.1);
+}
+
+.cta__content > .card > h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  gap: 15px;
+}
+
+.cta__content > .card > h4 > .material-symbols-outlined {
+  font-size: 30px;
+  color: #219c73;
+}
+
+.cta__content > .card > p {
+  font-size: 17px;
+  color: rgb(238, 238, 238);
+}
+.footer__section {
+  text-align: center;
+  padding: 5rem;
+  margin: auto;
+  background: #70faba;
+}
+
+.footer__section > h4 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe > button {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #c9ffe2;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.subscribe > .btn-one {
+  margin-right: 20px;
+}
+
+footer {
+  margin: auto;
+  padding: 50px 30px;
 }
